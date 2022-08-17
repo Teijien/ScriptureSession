@@ -1,0 +1,11 @@
+.NavBar {
+    background-color: rgb(35, 35, 39);
+    width: 100%;
+    height: fit-content;
+}
+
+ul.MenuItems {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
