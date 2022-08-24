@@ -1,14 +1,17 @@
-import React from 'react';
-import './NavItem.css'
+import './NavItem.css';
+import logo from '../logo.svg';
 
 function NavBar() {
     return (
         <nav className='NavBar'>
             <ul className='MenuItems'>
-                <h1>Item 1</h1>
-                <h1>Item 2</h1>
-                <h1>Item 3</h1>
-                <h1>Item 4</h1>
+                <img src={logo} className='MenuBtn' alt='Back' />
+                <h4 className='NavItem'>Viewing: Me</h4>
+                <div className='NavItem'>
+                    <h5 className='CodeTxt'>Code:</h5>
+                    <h5 className='CodeTxt'>XXXX</h5>
+                </div>
+                <img src={logo} className='MenuBtn' alt='Back' />
             </ul>
         </nav>
     )
