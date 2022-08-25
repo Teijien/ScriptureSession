@@ -1,7 +1,7 @@
 {"books": [
-        {"title": "Old Testament"},
-        {"title": "New Testament"},
-        {"title": "Book of Mormon"},
-        {"title": "Doctrine Covenants"},
-        {"title": "Pearl of Great Price"}
+        {"title": "Old Testament", "key": "OT"},
+        {"title": "New Testament", "key": "NT"},
+        {"title": "Book of Mormon", "key": "BoM"},
+        {"title": "Doctrine Covenants", "key": "D&C"},
+        {"title": "Pearl of Great Price", "key": "PoGP"}
 ]}

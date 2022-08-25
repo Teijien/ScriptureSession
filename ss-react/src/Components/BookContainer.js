@@ -7,7 +7,7 @@ export default function BookContainer() {
     return(
         <div className='bookContainer'>
             {
-            properties.books.map((book) => <Book title={book.title} />)
+            properties.books.map((book) => <Book title={book.title} key={book.key}/>)
             }
 
             {
