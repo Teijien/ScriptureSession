@@ -1,8 +1,7 @@
-import { useState } from "react";
 import logo from '../logo.svg'
-//import goTo from '../goTo.js'
+import './ListItems.css'
 
-export default function Book(props) {
+export function Book(props) {
     return(
         <>
             <img src={logo} alt={props.title} className='book' onClick={props.onClick} />
