@@ -7,6 +7,7 @@ export default function View() {
     const [showBooks, setShowBooks] = useState(true)
     const [showSections, setShowSections] = useState(false)
     const [showChapter, setShowChapter] = useState(false)
+    const [readChapter, setReadChapter] = useState(false)
     
     const bookList = properties.books.map(
         (book) =>
@@ -29,14 +30,27 @@ export default function View() {
             }}
         />
 
-    const chapterView = <h1>This is a chapter</h1>
+    const chapterView =
+        <ListItems.Book
+            title='chapter'
+            onClick={() => {
+                setShowChapter(false)
+                setReadChapter(true)
+            }}
+        />
 
-    return(
+    const chapterRead = <h1>This is a chapter</h1>
+
+    const view = 
         <div className='view'>
             { showBooks ? bookList : <></> }
             { showSections ? sectionList : <></> }
             { showChapter ? chapterView : <></> }
         </div>
+
+    return(
+        <>
+            { readChapter ? chapterRead : view }
+        </>
     )
 }
-
