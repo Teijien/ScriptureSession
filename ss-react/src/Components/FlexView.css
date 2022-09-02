@@ -1,0 +1,8 @@
+.view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: min(20px, 10vh)
+}
