@@ -4,6 +4,7 @@ const images = require.context('../Imgs', true)
 
 export function Book(props) {
     let curr_img
+    
     try {
         curr_img = images(`./${props.img}`)
     } catch(err) {
