@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './View.css';
+import './FlexView.css';
 import properties from '../properties.json';
 import * as ListItems from './ListItems.js';
 

@@ -1,4 +1,6 @@
 .book {
-    width: 200px;
+    width: min(40%, 200px);
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
