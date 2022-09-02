@@ -25,6 +25,7 @@ export default function View() {
     const sectionList =
         <ListItems.Book
             title='section'
+            key='test'
             onClick={() => {
                 setShowSections(false)
                 setShowChapter(true)
