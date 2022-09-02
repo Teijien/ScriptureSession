@@ -14,6 +14,7 @@ export default function View() {
             <ListItems.Book
                 title={book.title}
                 key={book.key}
+                img={book.img}
                 onClick={() => {
                     setShowBooks(false)
                     setShowSections(true)

@@ -1,7 +1,27 @@
 {"books": [
-        {"title": "Old Testament", "key": "OT"},
-        {"title": "New Testament", "key": "NT"},
-        {"title": "Book of Mormon", "key": "BoM"},
-        {"title": "Doctrine Covenants", "key": "D&C"},
-        {"title": "Pearl of Great Price", "key": "PoGP"}
+        {
+                "title": "Old Testament",
+                "key": "OT",
+                "img": "old_testament.png"
+        },
+        {
+                "title": "New Testament",
+                "key": "NT",
+                "img": "new_testament.png"
+        },
+        {
+                "title": "Book of Mormon",
+                "key": "BoM",
+                "img": "book_mormon.png"
+        },
+        {
+                "title": "Doctrine Covenants",
+                "key": "DC",
+                "img": "doctrine_and_covenants.png"
+        },
+        {
+                "title": "Pearl of Great Price",
+                "key": "PoGP",
+                "img": "pearl_of_great_price.png"
+        }
 ]}
