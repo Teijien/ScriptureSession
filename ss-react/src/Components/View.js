@@ -1,7 +1,11 @@
+/* The home for picking a book to read. Here users pick which book they
+ * will be reading from */
+
 import { useState } from 'react';
 import './FlexView.css';
 import properties from '../properties.json';
 import * as ListItems from './ListItems.js';
+import { Link } from 'react-router-dom';
 
 export default function View() {
     const [showBooks, setShowBooks] = useState(true)
@@ -11,15 +15,12 @@ export default function View() {
     
     const bookList = properties.books.map(
         (book) =>
-            <ListItems.Book
-                title={book.title}
-                key={book.key}
-                img={book.img}
-                onClick={() => {
-                    setShowBooks(false)
-                    setShowSections(true)
-                }}
-            />
+            <Link to={`/section/${book.key}`} class='book' key={book.key}>
+                <ListItems.Book
+                    title={book.title}
+                    img={book.img}
+                />
+            </Link>
     )
 
     const sectionList =

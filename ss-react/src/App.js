@@ -9,6 +9,12 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<View />} />
+        <Route path="section" />
+        <Route path='*' element={
+          <main style={{ padding: "1rem" }}>
+            <p>An error has occurred. Please press the back button on your browser.</p>
+          </main>
+        } />
       </Routes>
     </div>
   );
